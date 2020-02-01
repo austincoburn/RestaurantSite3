@@ -1,0 +1,137 @@
+<!-- Name: Austin Coburn
+	 Date Created: 01/28/20
+	 Last Edit: 01/31/20 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home Page</title>
+	<!-- Import bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- External style sheet for header and footer -->
+	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+	<!-- Change of font for restaurant name -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Required background color change of page's content. Didn't specify what style CSS implementation to use, so I just went with internal -->
+	<style type="text/css">
+		section {
+			background-color: #D56767;
+			padding: 10px;
+		}
+
+		nav .btn {
+        	background-color: #F02121;
+        	color: #fef9ff;
+        	margin-right: 8px;
+    	}
+
+    	header, footer {
+			font-family: 'Oswald', sans-serif;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+
+		h1{
+			font-size: 60px;
+		}
+
+		a:hover, i.fa:hover {
+			font-weight: bold;
+		}
+
+		i.fa {
+			font-size: 2.6em;
+			color: #5b7d70;
+		}
+
+		#h2black {
+			color: black;
+		}
+
+		p {
+			font-size: 1.6em;
+		}
+
+	</style>
+	<noscript>You may have JavaScript disabled. Our website works best if Javascript is enabled.</noscript>
+</head>
+<body>
+	<div class="container">
+		<header class="jumbotron">
+			<!-- Required restaurant name -->
+			<h1>Monk's Bar & Grill</h1>
+			<h3>Monk's is opening a new store on Court Road next Week!</h3>
+		</header>
+		<nav>
+			<hr />
+			<a href="index.html"><i class="fa fa-home"></i></a>
+			<a class="btn badge-pill" href="menu.html">Menu</a>
+			<a class="btn badge-pill" href="contact.html">Contact Us</a>
+			<hr />
+		</nav>
+		<section>
+			<!-- Required 400 x 150 home page restaurant picture. Image taken from Pixabay, which requires no attribution -->
+			<article>
+				<figure>
+				<!-- Inline image positioning. I'm not sure at this point whether or not you want the image to be responsive, so I set the max and min width = to the size of the picture on the assignment -->
+				<img class="img-fluid" src="images/monks.jpg" alt="Picture of outside of Monks" style="margin: auto auto; display: block; width: 50%; max-width: 450px; min-width: 300px">
+				</figure>
+				<!-- Required restaurant description -->
+				<p><strong>Restaurant Description:</strong></p>
+				<p>The best burgers, pasta, and salads in the state of Wisconsin!</p>
+			</article>
+			<!-- My carousel -->
+			<article>
+				<div class="row">
+					<div class="col-md-12">
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="w-100" src="images/insidemonks.jpg" alt="New Location">
+						      	<div class="carousel-caption">
+						      		<h2>We're opening a new location!</h2>
+						      	</div>
+						    </div>
+						    <div class="carousel-item">
+						      <img class="w-100" src="images/burgers.jpg" alt="Seasonal Menu">
+						      	<div class="carousel-caption">
+						      		<h2 id="h2black">We're rolling out our seasonal menu, with special options for this season.</h2>
+						      	</div>
+						    </div>
+						    <div class="carousel-item">
+						      <img class="w-100" src="images/brandy.jpg" alt="Drink of the Month">
+						      	<div class="carousel-caption">
+						      		<h2 id="h2black">The Drink of the Month is SG Special Brew.</h2>
+						      	</div>
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<hr />
+		<footer>
+			<!-- Required fictional address and phone number -->
+			<p>123 Court Rd. Plover, WI 54467</p>
+			<p>(555)-555-5555</p>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

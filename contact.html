@@ -1,0 +1,166 @@
+<!-- Name: Austin Coburn	
+	 Date Created: 01/28/20
+	 Last Edit: 1/30/20 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- External style sheet for header and footer -->
+	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Internal style sheet foor menu and contact form -->
+	<style type="text/css">
+
+		form {
+			width: 500px;
+			margin: auto;
+		}
+
+		.requiredInput label, p.requiredInput {
+			font-weight: bold;
+		}
+
+		nav .btn {
+        	background-color: #F02121;
+        	color: #fef9ff;
+        	margin-right: 8px;
+    	}
+
+    	header, footer {
+			font-family: 'Oswald', sans-serif;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+		h1{
+			font-size: 60px;
+		}
+
+		a:hover {
+			font-weight: bold;
+		}
+
+		label.form-check-label, label.radioOrCheck {
+			padding-right: 20px;
+		}
+
+		div.typeCheckbox, p, div.row label {
+			text-align: center;
+		}
+
+		i.fa {
+			font-size: 2.2em;
+			color: #5b7d70;
+		}
+
+		.form-actions {
+			margin: 0;
+			text-align: center;
+		}
+
+	</style>
+	<noscript>You may have JavaScript disabled. Our website works best if Javascript is enabled.</noscript>
+</head>
+<body>
+	<div class="container">
+		<header class="jumbotron">
+
+			<!-- Required restaurant name -->
+			<h1>Monk's Bar & Grill</h1>
+			<h3>Monk's is opening a new store on Court Road next Week!</h3>
+		</header>
+		<nav>
+			<hr />
+			<a href="index.html"><i class="fa fa-home"></i></a>
+			<a class="btn badge-pill" href="menu.html">Menu</a>
+			<a class="btn badge-pill" href="contact.html">Contact Us</a>
+			<hr />
+		</nav>
+		<section>
+			<article>
+				<form action="" method="POST" onsubmit="return validateForm(this);">
+					
+					<!-- Bold font weight for name, email, and phone required input -->
+					<div class="typeText requiredInput">
+						<div class="form-group row">
+							<label for="name" class="col-form-label offset-sm-2 col-sm-2 offset-md-1 col-md-2
+							">Name:</label>
+							<input type="text" id="userName" name="name" placeholder="John Doe" class="form-control col-sm-4 col-md-6">
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-form-label offset-sm-2 col-sm-2 offset-md-1 col-md-2">Email:</label>
+							<input type="text" id="userEmail" name="email" placeholder="johndoe@johndoe.com" class="form-control col-sm-4 col-md-6">
+						</div>
+						<div class="row">
+							<label for="phone" class="col-form-label offset-sm-2 col-sm-2 offset-md-1 col-md-2">Phone:</label>
+							<input type="text" id="userPhone" name="phone" placeholder="(123)-456-7890" class="form-control col-sm-4 col-md-6">
+						</div>
+					</div>
+					<br />
+					<div class="needInlineBlock">
+						<div class="typeDropdown form-group row">
+						<label for="inquiry" class="col-form-label col-sm-4 col-md-3" required>Reason for Inquiry:</label>
+							<select id="inquiry" name="inquiry" class="form-control col-sm-4 col-md-6" required>
+								<option value="default" selected>Catering</option>
+								<option value="privateParty">Private Party</option>
+								<option value="feedback">Feedback</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div class="form-group row">
+							<label for="info" class="col-sm-4 col-md-3">Additional Information:</label>
+							<textarea id="additionalInfo"  class="form-control col-sm-4 col-md-6"></textarea>
+						</div>
+						
+						<div class="typeRadio form-check form-check-inline">
+							<label class="radioOrCheck">Have you been to the restaurant?</label>
+							<input type="radio" name="answer" value="NO" class="form-check-input" checked>
+							<label for="NO" class="form-check-label col-form-label">No</label>
+							<input type="radio" name="answer" value="YES" class="form-check-input">
+							<label for="YES" class="form-check-label col-form-label">Yes</label>
+						</div>
+						<br /><br />
+						
+						<div class="typeCheckbox form-check form-check-inline">
+							<label class="radioOrCheck">Best days to contact you:</label>			
+							<input type="checkbox" name="contactDays" value="M" class="form-check-input">
+							<label for="M" class="form-check-label">M</label>
+							<input type="checkbox" name="contactDays" value="T" class="form-check-input">
+							<label for="T" class="form-check-label">T</label>
+							<input type="checkbox" name="contactDays" value="W" class="form-check-input">
+							<label for="W" class="form-check-label">W</label>
+							<input type="checkbox" name="contactDays" value="Th" class="form-check-input">
+							<label for="Tr" class="form-check-label">TR</label>
+							<input type="checkbox" name="contactDays" value="F" class="form-check-input">
+							<label for="F" class="form-check-label">F</label>
+						</div>
+					</div>
+					<br />
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary mb-2" name="sendRequest">Send Request</button>
+					</div>
+					
+				</form>
+			</article>
+		</section>
+		<hr />
+		<footer>
+			<!-- Required fictional address and phone number -->
+			<p>123 Court Rd. Plover, WI 54467</p>
+			<p>(555)-555-5555</p>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="scripts/restaurantScript.js"></script>
+</body>
+</html>

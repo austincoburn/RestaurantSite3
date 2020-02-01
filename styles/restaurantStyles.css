@@ -1,0 +1,42 @@
+/*  Name: Austin Coburn
+	Date Created: 1/28/20
+	Last Edit: 1/31/20 */
+
+/*  Only addressed the header and footer with the external style sheet as
+    directed in one of the earlier Restaurant Site modules. Everything else
+    is internal */
+
+nav .btn {
+	background-color: #5b7d70;
+	color: #fef9ff;
+	margin-right: 8px;
+}
+
+header, footer {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	margin-top: 5px;
+}
+
+nav a {
+	padding-right: 15px;
+}
+
+/* Visited links are green, ONLY hovered (not even active) links are bold font,
+and active links are not under lined */
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	text-decoration: none;
+	font-weight: normal;
+}
