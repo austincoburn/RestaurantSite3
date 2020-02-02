@@ -27,6 +27,7 @@ header h1 {
 }
 /* Visited links are green, ONLY hovered (not even active) links are bold font,
 and active links are not under lined */
+
 a:link {
 	color: blue;
 }
@@ -34,7 +35,6 @@ a:link {
 a:visited {
 	color: green;
 }
-
 a:hover {
 	font-weight: bold;
 }
@@ -43,3 +43,4 @@ a:active {
 	text-decoration: none;
 	font-weight: normal;
 }
+
