@@ -23,7 +23,7 @@ nav a {
 }
 
 header h1 {
-	font-family: 'Lobster', cursive;
+	font-size: 60px;
 }
 /* Visited links are green, ONLY hovered (not even active) links are bold font,
 and active links are not under lined */
