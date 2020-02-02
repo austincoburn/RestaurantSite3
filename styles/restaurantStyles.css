@@ -13,7 +13,7 @@ nav .btn {
 }
 
 header, footer {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Lobster', cursive;
 	text-align: center;
 	margin-top: 5px;
 }
@@ -22,6 +22,9 @@ nav a {
 	padding-right: 15px;
 }
 
+header h1 {
+	font-family: 'Lobster', cursive;
+}
 /* Visited links are green, ONLY hovered (not even active) links are bold font,
 and active links are not under lined */
 a:link {
